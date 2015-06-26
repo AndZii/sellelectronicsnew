@@ -2,6 +2,12 @@ Rails.application.routes.draw do
   get 'page_index' => 'page#index', as: :index
 
   get 'page_help' => 'page#help', as: :help
+
+  #popular_searches
+
+  get 'sell/my_iphone-6-nyc' => 'popular#sell_my_iphone_6', as: :sell_my_iphone_6
+
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

@@ -11,9 +11,10 @@
  * file per style scope.
  *
 
- *= require_tree .
- *= require_self
+
+
  */
+
 
 @media(max-width:767px){
     .project-name {
