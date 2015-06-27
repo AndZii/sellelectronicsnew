@@ -5,7 +5,7 @@ Rails.application.routes.draw do
 
   #popular_searches
 
-  get 'sell/my_iphone-6-nyc' => 'popular#sell_my_iphone_6', as: :sell_my_iphone_6
+  get 'sell-my-iphone-6-nyc' => 'popular#sell_my_iphone_6', as: :sell_my_iphone_6
 
 
   # The priority is based upon order of creation: first created -> highest priority.
