@@ -1,11 +1,23 @@
 Rails.application.routes.draw do
+  get 'appointment/index'
+
+  post 'appointment/create'
+
+  get 'appointment/delete'
+
+  get 'appointment/new'
+
   get 'page_index' => 'page#index', as: :index
 
   get 'page_help' => 'page#help', as: :help
 
+  get 'online_form' => 'page#form', as: :form
+
   #popular_searches
 
   get 'sell-my-iphone-6-nyc' => 'popular#sell_my_iphone_6', as: :sell_my_iphone_6
+
+  get 'sell-my-iphone-in-nyc' => 'popular#sell_my_iphone_nyc', as: :sell_my_iphone_nyc
 
 
   # The priority is based upon order of creation: first created -> highest priority.

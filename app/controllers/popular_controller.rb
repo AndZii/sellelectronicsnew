@@ -2,21 +2,38 @@ class PopularController < ApplicationController
 
   #first_section
 
+
+
   def sell_my_iphone_6
     @title = "Sell My iPhone 6 - Top Dollar For iPhone"
     @description = 'Best place to sell your iPhone 6 in NYC. We always pay more!'
-    @key_words = ['Electronics', 'NYC', 'iPhone', 'Sell','']
+    @key_words = ['Electronics', 'NYC', 'iPhone', 'Sell','Plus', 'New York', 'Buyers']
 
     @h1 = 'Sell My iPhone 6'
-    @main_p = '
-You looking for a place that buys iPhones? Here we are, ready to help you. <br>
-
-
-'
-    render 'template'
+    @h2 = "up to 610$"
+    @main_p = " You looking for a place that buys iPhones? Here we are, ready to help you. \n
+We pay up to 610 $ for iPhone 6, so if you want to have your top dollar, call us right now.\n
+"
+    @second_p = "Our queens location open 7 days a week, just walk in. If you want to visit our office in Manhattan, you need to
+ to schedule an appointment. You can call us or use online form."
+render 'template'
   end
 
+
+
   def sell_my_iphone_nyc
+    @title = "Sell My iPhone in NYC - Top Cash For iPhone in NYC"
+    @description = 'Best place to sell your iPhones in NYC. We always pay more!'
+    @key_words = ['Electronics', 'NYC', 'iPhone', 'Sell','plus', '5s', '5c', '5', 'six','apple']
+
+    @h1 = 'Best Place to sell my iPhone in NYC'
+    @h2 = "up to 610$ for iPhone 6, up to 810$ for iPhone 6 plus"
+    @main_p = "Want to sell iPhone in NYC? You are in the right place. All you need to know -s we always pay more and we do it right now. \n
+Up to 610 $ for iPhone 6, so if you want to have your top dollar, call us right now.\n
+    "
+    @second_p = "Our queens location open 7 days a week, just walk in. If you want to visit our office in Manhattan, you need to
+ to schedule an appointment. You can call us or use online form."
+    render 'template'
   end
 
   def sell_phone_plus

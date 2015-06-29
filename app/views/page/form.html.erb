@@ -1,0 +1,57 @@
+<%
+   meta title: @title,
+        description: @description,
+        keywords: @key_words
+%>
+
+
+
+<header>
+  <div class="header-content">
+    <div class="header-content-inner text-center">
+      <h1>Schedule An Appointment </h1>
+      <%= form_for @appointment, :url => {:controller => "appointment",:action => "create"}, class: "form-horizontal" do |f| %>
+           <div class="col-sm-12">
+              <%= f.label :name, "Your name:", class: "control-label" %>
+              <%= f.text_field :name , class: "form-control text-center" %>
+          <br/>
+           </div>
+          <div class="col-sm-12">
+              <%= f.label :time, "Time you want to come:", class: "control-label" %>
+          </div>
+          <div class="col-sm-6">
+            <%= f.label "Hours", class: "control-label" %>
+          </div>
+          <div class="col-sm-6">
+            <%= f.label "Minutes", class: "control-label" %>
+          </div>
+          <div class="col-sm-6">
+          <%= f.select :time, options_for_select(@hours
+                                                       ),{} ,{:class => 'form-control'} %>
+          </div>
+          <div class="col-sm-6">
+          <%= f.select :time, options_for_select(@minutes
+                            ),{} ,{:class => 'form-control'} %>
+          </div>
+          <div class="col-sm-12">
+          <br/>
+              <%= f.label :location, "Location you want to come to:", class: "control-label" %>
+            <%= f.select :time, options_for_select(["Manhattan - 71 w 47 Street ( #302 ), Midtown, NY, 10036", "Queens - 8710 Lefferts BLVD, Richmond Hill, Queens, NY, 11418 "]
+                              ),{} ,{:class => 'form-control text-center'} %>
+          <br/>
+          </div>
+          <div class="col-sm-12">
+              <%= f.label :item, "Item you want to sell:", class: "control-label" %>
+              <%= f.text_field :item , class: "form-control text-center" %>
+            </div>
+          <br/>
+          <br/>
+          <div class="col-sm-12">
+            <%= submit_tag "Send =>>", class: "btn btn-success btn-xl" %>
+          </div>
+      <% end %>
+      <br/>
+    </div>
+  </div>
+</header>
+
