@@ -19,6 +19,7 @@ Rails.application.routes.draw do
 
   get 'sell-my-iphone-in-nyc' => 'popular#sell_my_iphone_nyc', as: :sell_my_iphone_nyc
 
+  get 'where-to-sell-my-iphone-in-nyc' => 'popular#where_to_sell_iphone_in_nyc', :as => :where_to_sell_my_iphone_in_nyc
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
