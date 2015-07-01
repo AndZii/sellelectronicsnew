@@ -12,7 +12,7 @@ module ApplicationHelper
                     '400$ for Samsung Note 4',
                     '250$ for Samsung Galaxy 4',
                     '600$ for Samsung Galaxy S6',
-                    '300$ for PlayStation 4',
+                    '300$ for PlayStation S4',
                     '300$ for xBox One']
 
     " Up to " + @up_to_array[rand(@up_to_array.size)]
