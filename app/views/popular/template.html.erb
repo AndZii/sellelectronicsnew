@@ -1,6 +1,6 @@
 <%
-   meta title: @title,
-        description: @description,
+   meta title: @title.upcase!,
+        description: @description.capitalize!,
         keywords: @key_words
 %>
 
@@ -10,7 +10,9 @@
   <div class="header-content">
     <div class="header-content-inner">
       <h1><%= @h1 %></h1>
+      <% unless controller.action_name == 'cell_phone_repair_in_queens' || controller.action_name == 'where_to_fix_my_electronics_in_queens' || controller.action_name == 'iphone_repair_in_queens' || controller.action_name == 'fix_samsung_in_queens' %>
       <h2>(<%= "We always pay more. " +  up_to %>)</h2>
+          <% end %>
       <hr>
       <a href="tel:+1-718-846-1600" class="btn btn-primary btn-xl page-scroll"><i class="fa fa-phone"></i> CLICK TO CALL =>></a> <br/>
       <br/>
