@@ -75,6 +75,8 @@ Rails.application.routes.draw do
   get 'where-to-fix-my-iphone-in-queens' => 'popular#iphone_repair_in_queens', :as => :cell_phone_repair_iphone
 
   get 'where-to-fix-my-samsung-in-queens' => 'popular#fix_samsung_in_queens', :as => :cell_phone_repair_samsung
+
+  get '*unmatched_route', :to => 'page#index'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
